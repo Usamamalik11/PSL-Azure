@@ -1,7 +1,9 @@
 from flask import Flask,request,jsonify, render_template, url_for
 import pandas as pd
 import numpy as np
-import pickle
+import pip
+pip.main(['install','dill'])
+import dill as pickle
 #from sklearn.base import BaseEstimator, TransformerMixin
 #from sklearn import preprocessing
 
